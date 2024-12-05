@@ -14,7 +14,7 @@ class TimerCustom extends StatefulWidget {
 }
 
 class _TimerCustomState extends State<TimerCustom> {
-  int _countDownTimer = 4;
+  int _countDownTimer = 180;
   Timer? _timer;
 
   @override
@@ -66,7 +66,7 @@ class _TimerCustomState extends State<TimerCustom> {
                 onPressed: () {
                   widget.restartQuiz();
                   Navigator.of(context).pop();
-                  _countDownTimer = 4;
+                  _countDownTimer = 180;
                   startTimer();
                 },
                 child: const Text('Restart'),
